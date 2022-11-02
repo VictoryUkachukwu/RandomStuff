@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title> Grid Tryout</title>
+          <style>
+
+                    .grid-item3 {grid-area: three; background: #b7eeb9;}
+                    .grid-item4 {grid-area: four; background: #b7eeb9;}
+                    .grid-item5 {grid-area: five; background: #b7eeb9;}
+                    .grid-item6 {grid-area: six; background: #b7eeb9;}
+                   
+                    .grid-container {
+                              display: grid;
+                              grid-template-areas: 
+                              'three three three four four four'
+                              'five five five six six six';
+                              grid-gap: 30px;
+                              padding: 20px;
+                    }
+
+                    .grid-container > div {
+                              padding: 80px;
+                              text-align: left;
+                    }
+
+                    @media screen and (max-width: 900px) {
+                              /* .grid-item3 {
+                                        grid-area: 3/1/4/4;
+                              }
+
+                               .grid-item4 {
+                                        grid-area: 3/4/4/7;
+                               }
+
+                                .grid-item5 {
+                                        grid-area: 4/1/5/4;
+                                }
+
+                                .grid-item6 {
+                                        grid-area: 4/4/5/7;
+                              } */
+
+                              .grid-container {
+                                        grid-template-areas:
+                                        'three three three three three three'
+                                        'four four four four four four'
+                                        'five five five five five five'
+                                        'six six six six six six';
+                              }
+                    }
+          </style>
+</head>
+<body>
+          
+          <div class="grid-container">
+                    <div class="grid-item3"><h3>IMAGE 1</h3></div>
+                    <div class="grid-item4"><h3>IMAGE 2</h3></div>
+                    <div class="grid-item5"><h3>IMAGE 3</h3></div>
+                    <div class="grid-item6"><h3>IMAGE 4</h3></div>
+
+          </div>
+
+
+</body>
+</html>

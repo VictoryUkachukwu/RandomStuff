@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Flexbox</title>
+          <style>
+                    * {
+                              box-sizing: border-box;
+                    }
+
+                    .header {
+                              background: black;
+                              padding: 35px;
+                              color: white;
+                              text-align: center;
+                    }
+
+                    .navbar {
+                              background: rgb(80, 79, 79);
+                              padding: 20px;
+                              display: block;
+                    }
+
+                    .navbar a {
+                              text-decoration: none;
+                              text-align: center;
+                              color: white;
+                              padding: 20px;
+                              
+                    }
+
+                    .navbar a:hover {
+                              background: white;
+                              color: black;
+                    }
+
+                    .section {
+                              display: flex;
+                    }
+
+                    .Lside {
+                              background: rgb(211, 205, 205);
+                              flex: 30%;
+                              padding: 20px;
+                    }
+
+                    .Lside h3 {
+                              text-align: center;
+                    }
+
+                    .Rside {
+                              background: rgb(247, 235, 235);
+                              flex: 70%;
+                              padding: 20px;
+                    }
+
+                    .Rside h3 {
+                              text-align: center;
+                    }
+
+                    .myimage {
+                              background:rgb(80, 79, 79);
+                              padding: 20px;
+                    }
+
+                    .myimageX {
+                              background:rgb(80, 79, 79);
+                              padding: 25%;
+                    }
+
+                    .footer {
+                              background: rgb(36, 35, 35);
+                              padding: 2px;
+                              color: white;
+                    }
+
+                    .footer h5 {
+                              margin-left: 5px;
+                    }
+
+                    
+          @media screen and (max-width: 600px) {
+                    .navbar a {
+                              display: block;
+                              padding: 12px;
+                    }
+
+                    .section {
+                              display: block;
+                    }
+
+                    .header {
+                              background: navy;
+                    }
+
+                    .navbar {
+                              background: rgb(67, 67, 163);
+                    }
+
+                    .Lside {
+                              background: rgb(151, 151, 240);
+                    }
+
+                    .Rside {
+                              background: rgb(189, 189, 243);
+                    }
+
+                    .myimage, .myimageX {
+                              border: 2px solid navy;
+                              background: rgb(209, 201, 201);
+                    }
+
+                    .footer {
+                              background:rgb(40, 40, 100)
+                    }
+          }
+          </style>
+</head>
+<body>
+          
+          <div class="header">
+                    <h1> My Flexbox Web Layout</h1>
+                    <p> A Simple Trial</p>
+          </div>
+
+          <div class="navbar">
+                    <a href="#"> Link 1</a>
+                    <a href="#"> Link 2</a>
+                    <a href="#"> Link 3</a>
+                    <a href="#"> Link 4</a>
+          </div>
+
+          <div class="section">
+                    <div class="Lside">
+                              <h3> Flexbox Website Left</h3>
+                                        <div class="myimage"> Image </div><br>
+                                        <div class="myimage"> Image </div> <br>
+                                        <div class="myimage"> Image </div>
+                              <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus delectus, odio quibusdam nisi perspiciatis ea similique beatae repellendus consequuntur cum illum commodi dolorem odit itaque amet ut molestiae sit quae.</p>
+                    </div>
+
+                    <div class="Rside">
+                              <h3> Flexbox Website Right</h3>
+                              <div class="myimageX"></div>
+                              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam praesentium fugit, ea mollitia repellat quas modi saepe nostrum, maiores similique, tempora repudiandae molestiae maxime obcaecati odit natus? Officia, quo quas.</p>
+                              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam atque deserunt placeat sed, hic ducimus cumque doloremque totam labore. Quod, excepturi velit quibusdam nam numquam atque ipsa ab ex ut!</p>
+                    </div>
+          </div>
+
+          <div class="footer">
+                    <h5> Flexbox Website Trial</h5>
+          </div>
+
+
+
+
+
+
+</body>
+</html>
